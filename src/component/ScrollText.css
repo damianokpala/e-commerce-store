@@ -1,0 +1,16 @@
+.reabbe {
+  padding: 3.2rem 0rem;
+  background-color: #f7f5f0;
+  display: flex;
+  gap: 3rem;
+
+  span::before {
+    content: ".";
+  }
+}
+
+@media (max-width: 700px) {
+  .reabbe {
+    display: none;
+  }
+}

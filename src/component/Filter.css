@@ -1,0 +1,44 @@
+.filers-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  h4 {
+    margin-bottom: 1.1em;
+  }
+
+  h4 + div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    form {
+      max-width: 50%;
+      display: grid;
+      grid-template-columns: 40% 40%;
+      gap: 1rem;
+      column-gap: 2rem;
+
+      input {
+        width: 100%;
+      }
+
+      button {
+        width: 100%;
+        grid-column: span 2;
+        padding: 0.41rem;
+      }
+    }
+
+    .sizes {
+      display: flex;
+      gap: 0.8em;
+
+      span {
+        font-size: small;
+        border: 1px solid black;
+        padding: 0.6em;
+      }
+    }
+  }
+}

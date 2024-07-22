@@ -1,0 +1,125 @@
+footer {
+  background-color: #f7f5f0;
+
+  .footer-head {
+    padding: 4rem;
+    background-color: #fff;
+
+    .container {
+      display: grid;
+      gap: 3.4rem;
+      grid-template-columns: auto repeat(5, 1fr);
+
+      .logo {
+        display: block;
+        font-size: 2.4rem;
+        margin-bottom: 1.8rem;
+        font-weight: 700;
+      }
+
+      p {
+        line-height: 2;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+
+        img {
+          width: 3rem;
+        }
+      }
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        li {
+          a {
+            color: inherit;
+          }
+
+          display: flex;
+          gap: 0.2rem;
+          align-items: center;
+        }
+      }
+    }
+
+    .downloads {
+      ul {
+        li {
+          background-color: #002200;
+          color: #fff;
+          padding: 0.4em 0.8em;
+          border-radius: 7px;
+          font: 1.2em sans-serif;
+
+          span {
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-note {
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  footer {
+    .footer-head {
+      padding: 4rem;
+      background-color: #fff;
+
+      .container {
+        display: grid;
+        gap: 3.4rem;
+        grid-template-columns: auto repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    .footer-head {
+      .container {
+        display: grid;
+        gap: 3.4rem;
+        grid-template-columns: auto repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  footer {
+    .footer-head {
+      padding: 4rem;
+      background-color: #fff;
+
+      .container {
+        display: grid;
+        gap: 3.4rem;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.collection-section {
+  .container {
+    padding: 3rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+
+    img {
+      width: 100%;
+    }
+
+    article {
+      background-color: #f7f5f0;
+      padding: 6rem 3.2rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        h3 {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}

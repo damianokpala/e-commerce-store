@@ -1,0 +1,165 @@
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  /* border: 1px solid #ddd; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  background-color: #fff;
+
+  .form-section {
+    flex: 1;
+    margin-right: 2rem;
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .form-section form {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+  }
+
+  .form-section input,
+  .form-section select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .form-section label {
+    display: flex;
+    font-size: 1.3rem;
+
+    input {
+      width: fit-content;
+    }
+  }
+
+  .form-section label input {
+    margin-right: 0.5rem;
+  }
+
+  .name-fields {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .city-postcode-fields {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .back-to-cart {
+    color: #666;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .submit-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #f2c884;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .summary-section {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 6rem;
+    /* border-radius: 8px; */
+    /* border: 1px solid #ddd; */
+  }
+
+  .summary-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .summary-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+
+  .coupon-code {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .coupon-code input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+  }
+
+  .coupon-code button {
+    padding: 0.75rem;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+
+  .summary-totals {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-top: 2rem;
+  }
+
+  .summary-totals div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .summary-totals span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .checkout-container {
+    width: 80%;
+    flex-direction: column;
+    gap: 6rem;
+
+    .summary-section {
+      flex: 1;
+      background-color: #f9f9f9;
+      padding: 2rem;
+      /* border-radius: 8px; */
+      /* border: 1px solid #ddd; */
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .checkout-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 6rem;
+  }
+}
